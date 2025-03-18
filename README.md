@@ -18,8 +18,8 @@ $\pi(\beta,\sigma^2) \propto \frac{1}{\sigma^{p+2}}$
 
 We derive the conditional posterior distributions:
 
-- $\beta | \sigma^2, z \sim \mathcal{N}\hat{\beta},\,\sigma^2 (X^\top X)^{-1}, where $ $\hat{\beta} = (X^\top X)^{-1}X^\top z$
-- $\sigma^2 | \beta, z \sim \text{Inverse-Gamma}\left(\frac{n}{2},\,\frac{\text{SSE}}{2}\right)$, where ${SSE} = (z-X\beta)^\top(z-X\beta)$
+- $\beta \mid \sigma^2, z \sim \mathcal{N}\left(\hat{\beta}, \sigma^2 (X^\top X)^{-1}\right)$, where $\hat{\beta} = (X^\top X)^{-1}X^\top z$.
+- $\sigma^2 \mid \beta, z \sim \text{Inverse-Gamma}\left(\frac{n}{2},\,\frac{\text{SSE}}{2}\right)$, where $\text{SSE} = (z - X\beta)^\top (z - X\beta)$
 
 ## Data Processing
 The dataset is preprocessed to:
@@ -39,7 +39,7 @@ The Bayesian inference process follows these steps:
    - Mean Squared Error (MSE)
    - Root Mean Squared Error (RMSE)
    - Mean Absolute Error (MAE)
-   - R-squared $\R^2$
+   - R-squared $R^2$
    - Posterior Predictive p-value
 
 ## Results & Visualization
