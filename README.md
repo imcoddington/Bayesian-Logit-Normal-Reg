@@ -10,7 +10,7 @@ $z_i = \log\left(\frac{y_i}{1-y_i}\right) \sim \mathcal{N}(X_i\beta,\,\sigma^2)$
 
 This results in the likelihood function:
 
-$L(\beta, \sigma^2 \mid z) \propto (\sigma^2)^{-n/2} \exp\left\{-\frac{1}{2\sigma^2} (z - X\beta)^\top (z - X\beta) \right\}$
+$L(\beta, \sigma^2 \mid z) \propto (\sigma^2)^{-n/2} \exp\left\{ -\frac{1}{2\sigma^2} (z - X\beta)^\top (z - X\beta) \right\}$
 
 Using Jeffrey's prior:
 
